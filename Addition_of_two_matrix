@@ -1,0 +1,60 @@
+package Right;
+import java.util.Scanner;
+public class Even {
+	public static void main(String args[])
+	{
+		int[][]arr1=new int[2][2];
+		int[] []arr2=new int[2][2];
+		int [][]result=new int[2][2];
+		int i,j;
+		System.out.print("SYSTEM IS READY FOR TAKING THE VALUES:");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				Scanner sc=new Scanner(System.in);
+				arr1[i][j]=sc.nextInt();
+				
+			}
+		}
+		System.out.println("..........ARRAY1.........");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				System.out.print(arr1[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.print("System is ready again");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				Scanner sc=new Scanner(System.in);
+				arr2[i][j]=sc.nextInt();
+				
+			}
+		}
+		System.out.println("..........ARRAY2.........");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				System.out.print(arr2[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println("RESULT:ADDITION OF TWO MATRIX");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				result[i][j]=arr1[i][j]+arr2[i][j];
+				System.out.print(result[i][j]+" ");
+			}
+		System.out.println();
+		}
+		
+	}
+}
